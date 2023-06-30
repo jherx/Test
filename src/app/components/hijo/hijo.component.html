@@ -1,0 +1,10 @@
+<h3 (click)="editarTitulo()" *ngIf="!editandoTitulo">hijo components</h3>
+<input type="text" [(ngModel)]="nuevoTitulo" *ngIf="editandoTitulo" (blur)="guardarTitulo()" />
+<!-- <h4>{{EntradaNombreHijo}}</h4> -->
+
+<!-- <p>Entrada: {{ entrada }}</p> -->
+
+<!-- <button class="btn btn-primary" (click)="cambiarNombre()">Hacer clic</button> -->
+
+
+    

@@ -1,0 +1,24 @@
+<!-- <h1>home component</h1>
+<hr>
+<h3>{{nombreHome}}</h3>
+<button class="btn btn-primary" (click)="cambiarNombre()">Cambiar</button>
+<br>
+<br>
+<br> -->
+
+<div class="container text-center">
+    <div class="row">
+      <div class="col">
+      <app-titulos [EntradaNombreHijo]="nombreHome" [entrada]="nombreHome" (salida)="nombreHome = $event"></app-titulos>
+      </div>
+      <div class="row">
+       <app-subtitulos></app-subtitulos>
+      </div>
+      <div class="row">
+        <app-txt></app-txt>
+      </div>
+    </div>
+  </div>
+
+
+<!-- <app-hijo [EntradaNombreHijo]="nombreHome" [entrada]="nombreHome" (salida)="nombreHome = $event" ></app-hijo> -->

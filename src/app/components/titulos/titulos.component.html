@@ -1,0 +1,2 @@
+<h1 (click)="editarTitulo()" *ngIf="!editandoTitulo">{{EntradaNombreHijo}}</h1>
+<input type="text" [(ngModel)]="nuevoTitulo" *ngIf="editandoTitulo" (blur)="guardarTitulo()" />
